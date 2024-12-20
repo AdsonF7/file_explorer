@@ -1,0 +1,20 @@
+html
+    head
+        link(rel="stylesheet", type="", href="/styles/css.css")
+    body
+        div.map
+        div.structure
+            //- each item in fileStructure
+            //-     if item.type === "folder"
+            //-         div.folder.select
+            //-             p=item.name
+            //-     else if item.type === "file"
+            //-         div.file
+            //-             p=item.name
+        script.
+            const fileStructure = !{JSON.stringify(fileStructure)};
+        script(src="/scripts/utils.js")
+        script(src="/scripts/navigation.js")
+        script(src="/scripts/item.js")
+        script(src="/scripts/script.js" type="application/javascript")
+        
